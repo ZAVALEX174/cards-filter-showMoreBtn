@@ -2,12 +2,18 @@ window.addEventListener('DOMContentLoaded', () => {
     const optionShowMoreBtn = document.querySelector('.option__show-more');
     const optionBtnHidden = document.querySelector('.option__btn-hidden');
     const resetBtn = document.querySelector('.btn__reset');
+    const submitBtn = document.querySelector('.btn__apply');
     const openSidebarBtn = document.querySelector('.burger');
     const sidebar = document.querySelector('.sidebar');
     const cardShowMoreBtn = document.querySelector('.show-more');
     const cardBox = document.querySelector('.cards-holder');
     const cards = Array.from(cardBox.querySelectorAll('.card__link'));
     // console.log(cardShowMoreBtn, cardBox, cards);
+
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert("Сообщение отправлено!")
+    })
 
 // optionShowMoreBtn.addEventListener('click', (e) => {
 //     e.preventDefault();
@@ -108,6 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
     response1();
 
     // function response2() {
@@ -141,6 +148,7 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
     response2();
 
     // function response3() {
@@ -174,5 +182,6 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+
     response3();
 })

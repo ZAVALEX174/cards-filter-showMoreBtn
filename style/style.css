@@ -68,6 +68,7 @@ div {
         flex-wrap: wrap;
         gap: 30px;
         margin-right: 30px;
+        margin-bottom: auto;
 
         @media (max-width: 900px) {
             margin-right: 0;
@@ -765,6 +766,7 @@ a.card__link:hover {
         transform: rotateZ(-45deg) translate(5.5px, -5.5px);
     }
 }
+
 .hidden {
     display: none !important;
 }
